@@ -2,6 +2,22 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.6.
 
+## Kata6 Prompt 
+
+```
+Kata 6 — Visual Boundary Enforcement
+Task:
+Attempt to style a child component’s internal element from the parent.
+Constraints:
+•	Do NOT use ::ng-deep
+•	Do NOT disable encapsulation
+Deliverable:
+•	One failing attempt
+•	One correct solution via component API (class/host)
+Reflection Trigger:
+Why is visual isolation treated like encapsulation, not convenience?
+```
+
 ## Development server
 
 To start a local development server, run:
