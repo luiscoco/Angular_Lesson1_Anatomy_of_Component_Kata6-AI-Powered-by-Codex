@@ -1,0 +1,36 @@
+<section class="page">
+  <header class="hero">
+    <p class="eyebrow">Kata 6</p>
+    <h1>Visual Boundary Enforcement</h1>
+    <p class="subtitle">
+      Try to style a child component from the parent. Then fix it using the
+      component API instead of breaking encapsulation.
+    </p>
+  </header>
+
+  <div class="grid">
+    <section class="panel attempt">
+      <h2>Failing attempt</h2>
+      <p>
+        The parent targets the child's internal <code>.core</code> element with
+        a selector. It fails because the child's styles are isolated.
+      </p>
+      <app-visual-box label="Child component"></app-visual-box>
+      <p class="note">Expected accent border. Still default.</p>
+    </section>
+
+    <section class="panel solution">
+      <h2>Correct solution via component API</h2>
+      <p>
+        The parent adds a class to the host, and the child opts into it using
+        <code>:host(.accent)</code>.
+      </p>
+      <app-visual-box class="accent" label="Child component"></app-visual-box>
+      <p class="note">Accent border applied by the child itself.</p>
+    </section>
+  </div>
+
+  <footer class="reflection">
+    <p>Reflection trigger: Why is visual isolation treated like encapsulation, not convenience?</p>
+  </footer>
+</section>
